@@ -1,3 +1,4 @@
+import 'package:blinkit_clone/repository/screens/bottomnav/bottomnavscreen.dart';
 import 'package:blinkit_clone/repository/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class LoginScreen extends StatelessWidget {
                 text: 'India’s last minute app',
                 color: Color(0XFF000000),
                 fontweight: FontWeight.bold,
-                fontsize: 20,
+                fontsize: 24,
                 fontfamily: 'bold'),
             SizedBox(height: 10),
             Card(
@@ -36,7 +37,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 child: Column(children: [
                   UiHelper.CustomText(
-                      text: 'Ajit',
+                      text: 'Ajit Kumar',
                       color: Color(0XFF000000),
                       fontweight: FontWeight.bold,
                       fontsize: 14,
@@ -53,7 +54,12 @@ class LoginScreen extends StatelessWidget {
                       height: 48,
                       width: 295,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => BottomNavScreen()));
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Color(0XFFE23744),
                             shape: RoundedRectangleBorder(
@@ -84,7 +90,7 @@ class LoginScreen extends StatelessWidget {
                   UiHelper.CustomText(
                       text: 'or login with phone number',
                       color: Color(0XFF269237),
-                      fontweight:FontWeight.w400 ,
+                      fontweight: FontWeight.w400,
                       fontsize: 14)
                 ]),
               ),
