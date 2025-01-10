@@ -114,9 +114,81 @@ class CartScreen extends StatelessWidget {
           Row(
             children: [
               SizedBox(width: 20),
-              UiHelper.CustomImage(image: "image 45.png")
+              Stack(
+                children: [
+                  UiHelper.CustomImage(image: "image 45.png"),
+                  Padding(
+                    padding: EdgeInsets.only(top: 94, left: 66),
+                    child: UiHelper.CustomButton(() {}),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 120),
+                    child: UiHelper.CustomText(
+                        text: 'Amul Taaza Toned',
+                        color: Colors.black,
+                        fontweight: FontWeight.w300,
+                        fontsize: 8),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 135),
+                    child: UiHelper.CustomText(
+                        text: '₹ 45.00',
+                        color: Colors.black,
+                        fontweight: FontWeight.bold,
+                        fontsize: 10),
+                  )
+                ],
+              ),
+              SizedBox(width: 15),
+              Stack(children: [
+                UiHelper.CustomImage(image: "image 44.png"),
+                Padding(
+                  padding: EdgeInsets.only(top: 94, left: 66),
+                  child: UiHelper.CustomButton(() {}),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 120),
+                  child: UiHelper.CustomText(
+                      text: 'Potato (Aloo)',
+                      color: Colors.black,
+                      fontweight: FontWeight.w300,
+                      fontsize: 8),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 135),
+                  child: UiHelper.CustomText(
+                      text: '₹ 45.00',
+                      color: Colors.black,
+                      fontweight: FontWeight.bold,
+                      fontsize: 10),
+                )
+              ]),
+              SizedBox(width: 15),
+              Stack(children: [
+                UiHelper.CustomImage(image: "image 46.png"),
+                Padding(
+                  padding: EdgeInsets.only(top: 94, left: 66),
+                  child: UiHelper.CustomButton(() {}),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 120),
+                  child: UiHelper.CustomText(
+                      text: 'Hybrid Tomato',
+                      color: Colors.black,
+                      fontweight: FontWeight.w300,
+                      fontsize: 8),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 140),
+                  child: UiHelper.CustomText(
+                      text: '₹ 45.00',
+                      color: Colors.black,
+                      fontweight: FontWeight.bold,
+                      fontsize: 10),
+                )
+              ])
             ],
-          )
+          ),
         ],
       ),
     );

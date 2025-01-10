@@ -21,8 +21,7 @@ class UiHelper {
     );
   }
 
-  static CustomTextField(
-      {required TextEditingController controller}) {
+  static CustomTextField({required TextEditingController controller}) {
     return Container(
       height: 40,
       width: 320,
@@ -39,10 +38,26 @@ class UiHelper {
               prefixIcon:
                   Image.asset("assets/images/search-interface-symbol 1.png"),
               suffixIcon: Image.asset("assets/images/mic 1.png"),
-              border: InputBorder.none)
-              
-              
-              ),
+              border: InputBorder.none)),
+    );
+  }
+
+  static CustomButton(VoidCallback callback) {
+    return Container(
+      height: 18,
+      width: 30,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(
+            color: Colors.grey,
+          ),
+          borderRadius: BorderRadius.circular(4)),
+      child: Center(
+        child: Text(
+          'ADD',
+          style: TextStyle(fontSize: 8, color: Color(0XFF27AF34)),
+        ),
+      ),
     );
   }
 }
