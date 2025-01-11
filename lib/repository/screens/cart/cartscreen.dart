@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class CartScreen extends StatelessWidget {
   TextEditingController searchController = TextEditingController();
 
+  CartScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
