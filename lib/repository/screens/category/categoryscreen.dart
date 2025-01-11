@@ -65,7 +65,7 @@ class CategoryScreen extends StatelessWidget {
                         children: [
                           SizedBox(width: 20),
                           UiHelper.CustomText(
-                              text: '16 minutes',
+                              text: '10 minutes',
                               color: Color(0XFF000000),
                               fontweight: FontWeight.bold,
                               fontsize: 20,
@@ -80,7 +80,7 @@ class CategoryScreen extends StatelessWidget {
                             fontweight: FontWeight.bold,
                             fontsize: 14),
                         UiHelper.CustomText(
-                            text: '- Sujal Dave, Ratanada, Jodhpur (Raj)',
+                            text: '- Ajit Kumar, Kanpur, UP',
                             color: Color(0XFF000000),
                             fontweight: FontWeight.w300,
                             fontsize: 14)
